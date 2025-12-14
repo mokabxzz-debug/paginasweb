@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 1. TÍTULO OPTIMIZADO: Debe tener entre 50-60 caracteres y palabras clave -->
+    <title>Diseño de Páginas Web Profesionales | CreaTuWeb Agencia</title>
+    
+    <!-- 2. META DESCRIPCIÓN: Es el resumen que sale en gris bajo el título en Google. -->
+    <meta name="description" content="Creamos páginas web modernas, tiendas online y portafolios. Diseño responsivo y optimizado para SEO. ¡Lleva tu negocio al mundo digital hoy!">
+    
+    <!-- 3. PALABRAS CLAVE (Opcional, pero ayuda a organizarte): -->
+    <meta name="keywords" content="diseño web, desarrollo web, paginas web, seo, marketing digital, crear pagina web">
+
+    <!-- 4. OPEN GRAPH (Para Facebook): Como tu foco es Facebook, esto es vital. 
+         Controla cómo se ve la "tarjeta" cuando compartes tu link. -->
+    <meta property="og:title" content="Diseño de Páginas Web Profesionales | CreaTuWeb">
+    <meta property="og:description" content="¿Necesitas una web? Creamos sitios rápidos, bonitos y que venden. Cotiza sin compromiso.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://tupaginaweb.com">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-pattern {
+            background-color: #ffffff;
+            background-image: radial-gradient(#3b82f6 0.5px, transparent 0.5px), radial-gradient(#3b82f6 0.5px, #ffffff 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+            opacity: 0.1;
+        }
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <!-- Logo / Brand -->
+                    <a href="#" class="flex-shrink-0 flex items-center text-blue-600">
+                        <i class="fa-solid fa-code fa-2x mr-2"></i>
+                        <span class="font-bold text-xl tracking-tight">CreaTuWeb</span>
+                    </a>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#servicios" class="text-gray-600 hover:text-blue-600 transition">Servicios</a>
+                    <a href="#portafolio" class="text-gray-600 hover:text-blue-600 transition">Portafolio</a>
+                    <a href="#contacto" class="text-gray-600 hover:text-blue-600 transition">Contacto</a>
+                    <a href="https://facebook.com" target="_blank" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition shadow-lg flex items-center">
+                        <i class="fa-brands fa-facebook-f mr-2"></i> Síguenos
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-blue-600 focus:outline-none">
+                        <i class="fa-solid fa-bars fa-2x"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <a href="#servicios" class="block px-4 py-3 text-gray-600 hover:bg-gray-100">Servicios</a>
+            <a href="#portafolio" class="block px-4 py-3 text-gray-600 hover:bg-gray-100">Portafolio</a>
+            <a href="#contacto" class="block px-4 py-3 text-gray-600 hover:bg-gray-100">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+        <div class="absolute inset-0 hero-pattern z-0"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto fade-in-up" style="animation-delay: 0.1s;">
+                <span class="bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Expertos en Desarrollo Web</span>
+                <!-- 5. USO DE H1: Google da mucha importancia a esto. Debe contener lo que haces. -->
+                <h1 class="mt-4 text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                    Diseño de <span class="text-blue-600">Páginas Web</span> que Venden
+                </h1>
+                <p class="mt-6 text-xl text-gray-500">
+                    Desarrollamos sitios web modernos, rápidos y optimizados para aparecer en Google. Deja de perder clientes y profesionaliza tu marca hoy mismo.
+                </p>
+                <div class="mt-10 flex justify-center gap-4">
+                    <a href="#contacto" class="px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg shadow-lg transition transform hover:-translate-y-1">
+                        Cotizar mi web
+                    </a>
+                    <a href="#portafolio" class="px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200 md:py-4 md:text-lg transition">
+                        Ver trabajos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Nuestros Servicios</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Todo lo que necesitas para triunfar online
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="p-8 bg-gray-50 rounded-xl hover:shadow-xl transition duration-300 border border-gray-100">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 mb-4">
+                        <i class="fa-solid fa-laptop-code fa-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Diseño Web A Medida</h3>
+                    <p class="text-gray-600">Sitios únicos adaptados a tu marca. Nada de plantillas aburridas, creamos experiencias visuales impactantes.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="p-8 bg-gray-50 rounded-xl hover:shadow-xl transition duration-300 border border-gray-100">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center text-green-600 mb-4">
+                        <i class="fa-solid fa-mobile-screen-button fa-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">100% Responsivo</h3>
+                    <p class="text-gray-600">Tu página se verá perfecta en celulares, tablets y computadoras. Esencial para no perder ni un solo cliente.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="p-8 bg-gray-50 rounded-xl hover:shadow-xl transition duration-300 border border-gray-100">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center text-purple-600 mb-4">
+                        <i class="fa-solid fa-rocket fa-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">SEO y Velocidad</h3>
+                    <p class="text-gray-600">Optimizamos tu sitio para que cargue rápido y aparezca en las búsquedas de Google.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section (CRITICAL) -->
+    <section id="portafolio" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Nuestro Portafolio
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+                    Explora la versatilidad de nuestro trabajo, desde iniciativas académicas hasta soluciones corporativas complejas.
+                </p>
+            </div>
+
+            <!-- CAMBIO AQUÍ: Regresamos a 2 columnas para destacar mejor los dos enfoques -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+                
+                <!-- Project 1: Banoffee (Enfoque Estudiantil/Académico) -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 flex flex-col border-t-4 border-yellow-400">
+                    <div class="bg-gray-800 h-8 flex items-center px-4 space-x-2">
+                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                    </div>
+                    <div class="h-64 bg-gray-200 relative overflow-hidden group">
+                         <div class="absolute inset-0 flex items-center justify-center bg-gray-100 text-gray-400">
+                             <i class="fa-solid fa-image fa-3x"></i>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Proyecto académico Banoffee" class="absolute inset-0 w-full h-full object-cover">
+                        
+                        <div class="absolute inset-0 bg-yellow-900 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <a href="https://zingy-banoffee-bf9db7.netlify.app/" target="_blank" class="text-white font-bold text-lg border-2 border-white px-6 py-2 rounded-full hover:bg-white hover:text-yellow-900 transition">
+                                Ver Prototipo
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-8 flex-grow">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-2xl font-bold text-gray-900">Proyecto Banoffee</h3>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Académico</span>
+                        </div>
+                        <p class="text-gray-500 mt-4 text-base">
+                            Una plataforma experimental diseñada con enfoque en la comunidad estudiantil. Este proyecto demuestra capacidad de adaptación, investigación de usuario y diseño de interfaces amigables para entornos de aprendizaje colaborativo.
+                        </p>
+                        <div class="mt-6 flex flex-wrap gap-2">
+                             <span class="bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full">Prototipado</span>
+                             <span class="bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full">UI Experimental</span>
+                             <span class="bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full">Investigación</span>
+                        </div>
+                    </div>
+                    <div class="px-8 pb-8 pt-0">
+                         <a href="https://zingy-banoffee-bf9db7.netlify.app/" target="_blank" class="block w-full text-center bg-yellow-500 text-white font-bold py-3 rounded hover:bg-yellow-600 transition shadow-md">
+                            Ver Demo Estudiantil <i class="fa-solid fa-graduation-cap ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Didactoro (Enfoque Profesional/Corporativo) -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 flex flex-col border-t-4 border-blue-600">
+                    <div class="bg-gray-800 h-8 flex items-center px-4 space-x-2">
+                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                    </div>
+                    <div class="h-64 bg-gray-200 relative overflow-hidden group">
+                         <div class="absolute inset-0 flex items-center justify-center bg-gray-100 text-gray-400">
+                             <i class="fa-solid fa-image fa-3x"></i>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Plataforma profesional Didactoro" class="absolute inset-0 w-full h-full object-cover">
+                        
+                        <div class="absolute inset-0 bg-blue-900 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <a href="http://didactoro.xyz/" target="_blank" class="text-white font-bold text-lg border-2 border-white px-6 py-2 rounded-full hover:bg-white hover:text-blue-900 transition">
+                                Ver Sitio Oficial
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-8 flex-grow">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-2xl font-bold text-gray-900">Didactoro Platform</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Profesional</span>
+                        </div>
+                        <p class="text-gray-500 mt-4 text-base">
+                            Una solución web integral y escalable desplegada en producción. Enfocada en la estabilidad, seguridad y gestión avanzada de datos para uso profesional continuo. Representa nuestro estándar de calidad comercial.
+                        </p>
+                        <div class="mt-6 flex flex-wrap gap-2">
+                             <span class="bg-blue-50 text-blue-700 text-xs px-3 py-1 rounded-full">Full Stack</span>
+                             <span class="bg-blue-50 text-blue-700 text-xs px-3 py-1 rounded-full">Producción</span>
+                             <span class="bg-blue-50 text-blue-700 text-xs px-3 py-1 rounded-full">Escalable</span>
+                        </div>
+                    </div>
+                    <div class="px-8 pb-8 pt-0">
+                         <a href="http://didactoro.xyz/" target="_blank" class="block w-full text-center bg-blue-600 text-white font-bold py-3 rounded hover:bg-blue-700 transition shadow-md">
+                            Visitar Plataforma <i class="fa-solid fa-briefcase ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us / CTA -->
+    <section class="bg-blue-700 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-8">¿Listo para impulsar tu marca?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center mb-10">
+                <div>
+                    <i class="fa-solid fa-clock fa-2x mb-4 text-blue-300"></i>
+                    <h4 class="font-bold">Entrega Rápida</h4>
+                    <p class="text-blue-200 text-sm">Tu sitio listo en tiempo récord.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-lock fa-2x mb-4 text-blue-300"></i>
+                    <h4 class="font-bold">Seguridad SSL</h4>
+                    <p class="text-blue-200 text-sm">Sitios seguros para ti y tus clientes.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-headset fa-2x mb-4 text-blue-300"></i>
+                    <h4 class="font-bold">Soporte Continuo</h4>
+                    <p class="text-blue-200 text-sm">No te dejamos solo tras el lanzamiento.</p>
+                </div>
+            </div>
+            <a href="https://facebook.com" target="_blank" class="inline-block bg-white text-blue-700 font-bold px-8 py-3 rounded-full hover:bg-gray-100 transition transform hover:scale-105 shadow-lg">
+                <i class="fa-brands fa-facebook-messenger mr-2"></i> Envíanos un mensaje
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-16 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-extrabold text-gray-900">Contáctanos</h2>
+                <p class="mt-4 text-gray-500">¿Tienes una idea en mente? Escríbenos y te damos un presupuesto sin compromiso.</p>
+            </div>
+
+            <form id="contactForm" class="bg-gray-50 p-8 rounded-xl shadow-inner border border-gray-200">
+                <div class="grid grid-cols-1 gap-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Nombre</label>
+                        <input type="text" id="name" required class="mt-1 block w-full px-4 py-2 bg-white border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" placeholder="Tu nombre">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Correo Electrónico</label>
+                        <input type="email" id="email" required class="mt-1 block w-full px-4 py-2 bg-white border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" placeholder="ejemplo@correo.com">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Mensaje</label>
+                        <textarea id="message" rows="4" required class="mt-1 block w-full px-4 py-2 bg-white border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" placeholder="Hola, me gustaría cotizar una página web..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 px-4 rounded-md hover:bg-blue-700 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        Enviar Mensaje
+                    </button>
+                </div>
+                <div id="formStatus" class="mt-4 text-center hidden text-green-600 font-bold">
+                    ¡Mensaje enviado correctamente! Nos pondremos en contacto pronto.
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <span class="font-bold text-xl">CreaTuWeb</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Simple Form Simulation
+        const form = document.getElementById('contactForm');
+        const status = document.getElementById('formStatus');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Simulate sending data
+            const btnSubmit = form.querySelector('button');
+            const originalText = btnSubmit.innerText;
+            
+            btnSubmit.innerText = 'Enviando...';
+            btnSubmit.disabled = true;
+
+            setTimeout(() => {
+                status.classList.remove('hidden');
+                form.reset();
+                btnSubmit.innerText = originalText;
+                btnSubmit.disabled = false;
+                
+                // Hide success message after 3 seconds
+                setTimeout(() => {
+                    status.classList.add('hidden');
+                }, 5000);
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
